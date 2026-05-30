@@ -1,0 +1,37 @@
+nohup: ignoring input
+Total symbols to fetch: 807
+Starting 15-min data fetch...
+======================================================================
+  [1/807] 360ONE            1431 candles ✅
+  [51/807] ARE&M             1431 candles ✅
+  [101/807] BIOCON            1431 candles ✅
+  [151/807] COHANCE           1431 candles ✅
+  [201/807] EMMVEE            1431 candles ✅
+  [251/807] GODREJAGRO        1431 candles ✅
+  [301/807] ICICIAMC          1431 candles ✅
+  [351/807] JBMA              1431 candles ✅
+  [401/807] KPITTECH          1431 candles ✅
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: MARBLE.NS"}}}
+$MARBLE.NS: possibly delisted; no price data found  (period=60d) (Yahoo error = "No data found, symbol may be delisted")
+  [443/807] MARBLE          ❌ No data
+  [451/807] MEDANTA           1431 candles ✅
+  [501/807] NLCINDIA          1431 candles ✅
+  [551/807] POLICYBZR         1431 candles ✅
+  [601/807] RRKABEL           1431 candles ✅
+  [651/807] SPORTKING         1431 candles ✅
+  [701/807] TCS               1431 candles ✅
+  [751/807] UPL               1431 candles ✅
+$WATERBASE.NS: possibly delisted; no price data found  (period=60d)
+  [785/807] WATERBASE       ❌ No data
+  [801/807] ZEEL              1431 candles ✅
+
+======================================================================
+FETCH COMPLETE!
+  Success : 799
+  Failed  : 2
+  Skipped : 6
+  Total candles: 1,132,481
+  Total symbols: 805
+  Date range   : 2026-03-02 09:15:00 to 2026-05-29 15:15:00
+  DB size      : /home/ubuntu/nse-scanner/intraday_15min.db
+Done!

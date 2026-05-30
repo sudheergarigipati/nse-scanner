@@ -1,0 +1,98 @@
+nohup: ignoring input
+======================================================================
+  VWAP BACKTEST
+  4 scenarios | Mar-May 2026 | 15-min data
+======================================================================
+Available days : 59
+Date range     : 2026-03-02 to 2026-05-29
+
+Scanning signals with VWAP calculations...
+  Day 10/59: 2026-03-17 | Trades: 38 | Time: 19s
+  Day 20/59: 2026-04-02 | Trades: 88 | Time: 42s
+  Day 30/59: 2026-04-20 | Trades: 112 | Time: 63s
+  Day 40/59: 2026-05-04 | Trades: 129 | Time: 84s
+  Day 50/59: 2026-05-18 | Trades: 144 | Time: 105s
+
+Total trades: 174
+
+====================================================================================================
+  VWAP BACKTEST RESULTS
+====================================================================================================
+
+  Filter                                                 T   WR%   AvgWin  AvgLoss   W:L         P&L
+  -----------------------------------------------------------------------------------------------
+  A: EOD green only (baseline)                       T=  65 WR= 50.8% AvgW= +1,198 AvgL=   -246 W:L= 4.9 P&L=   +32,740
+  B: No filter (reality)                             T= 171 WR= 22.8% AvgW= +1,206 AvgL=   -239 W:L= 5.0 P&L=   +16,526
+  C: Close > Daily VWAP only                         T=  69 WR= 36.2% AvgW= +1,247 AvgL=   -247 W:L= 5.0 P&L=   +21,121
+  D: EOD green + close > Daily VWAP                  T=  44 WR= 52.3% AvgW= +1,254 AvgL=   -218 W:L= 5.8 P&L=   +25,082
+  E: EOD green + close > Anchored VWAP               T=  40 WR= 65.0% AvgW= +1,131 AvgL=   -243 W:L= 4.7 P&L=   +26,263
+  F: Close > Anchored VWAP only                      T=  47 WR= 57.4% AvgW= +1,122 AvgL=   -242 W:L= 4.6 P&L=   +25,718
+  G: Close > Daily VWAP + close > Anchored VWAP      T=  33 WR= 57.6% AvgW= +1,177 AvgL=   -222 W:L= 5.3 P&L=   +19,518
+  H: EOD green + both VWAPs                          T=  30 WR= 63.3% AvgW= +1,177 AvgL=   -201 W:L= 5.9 P&L=   +20,426
+
+====================================================================================================
+  MONTHLY BREAKDOWN — KEY SCENARIOS
+====================================================================================================
+
+  A: EOD green (baseline)
+    2026-03: T= 28 W=  6 WR= 21.4% P&L=Rs   +1,296
+    2026-04: T= 22 W= 18 WR= 81.8% P&L=Rs  +22,830
+    2026-05: T= 15 W=  9 WR= 60.0% P&L=Rs   +7,519
+    TOTAL: T= 65 W= 33 WR= 50.8% P&L=Rs  +31,645
+
+  D: EOD green + Daily VWAP
+    2026-03: T= 20 W=  6 WR= 30.0% P&L=Rs   +4,049
+    2026-04: T= 16 W= 13 WR= 81.2% P&L=Rs  +17,943
+    2026-05: T=  8 W=  4 WR= 50.0% P&L=Rs   +2,263
+    TOTAL: T= 44 W= 23 WR= 52.3% P&L=Rs  +24,255
+
+  E: EOD green + Anchored VWAP
+    2026-03: T= 18 W=  6 WR= 33.3% P&L=Rs   +4,127
+    2026-04: T= 15 W= 14 WR= 93.3% P&L=Rs  +16,561
+    2026-05: T=  7 W=  6 WR= 85.7% P&L=Rs   +5,310
+    TOTAL: T= 40 W= 26 WR= 65.0% P&L=Rs  +25,998
+
+  H: EOD green + both VWAPs
+    2026-03: T= 15 W=  6 WR= 40.0% P&L=Rs   +5,319
+    2026-04: T= 11 W= 10 WR= 90.9% P&L=Rs  +12,663
+    2026-05: T=  4 W=  3 WR= 75.0% P&L=Rs   +2,179
+    TOTAL: T= 30 W= 19 WR= 63.3% P&L=Rs  +20,161
+
+====================================================================================================
+  VWAP ACCURACY ANALYSIS
+====================================================================================================
+
+  When EOD green (68 trades):
+    Also above Daily VWAP   : 46 (67.6%)
+    Also above Anchored VWAP: 41 (60.3%)
+
+  VWAP levels at entry (EOD green trades):
+    GRASIM       2026-03-06 | Entry=  2717.5 | DVWAP= 2735.72 (-0.7%) | AVWAP= 2718.74 (-0.1%) | SL    Rs  -243
+    STYRENIX     2026-03-09 | Entry=  1863.0 | DVWAP= 1858.36 (+0.2%) | AVWAP=  1869.2 (-0.3%) | WIN   Rs  +756
+    PRIVISCL     2026-03-09 | Entry=  2884.6 | DVWAP= 2903.41 (-0.7%) | AVWAP= 2903.56 (-0.7%) | SL    Rs  -165
+    AFFLE        2026-03-09 | Entry=  1341.2 | DVWAP= 1375.77 (-2.5%) | AVWAP= 1372.34 (-2.3%) | WIN   Rs  +732
+    INDHOTEL     2026-03-12 | Entry=   622.3 | DVWAP=  619.73 (+0.4%) | AVWAP=   624.4 (-0.3%) | SL    Rs  -149
+    SKIPPER      2026-03-12 | Entry=   339.1 | DVWAP=  351.46 (-3.5%) | AVWAP=   348.3 (-2.6%) | SL    Rs  -424
+    RKFORGE      2026-03-12 | Entry=   552.5 | DVWAP=  557.08 (-0.8%) | AVWAP=  555.64 (-0.6%) | SL    Rs  -243
+    NLCINDIA     2026-03-12 | Entry=   247.6 | DVWAP=  264.91 (-6.5%) | AVWAP=  258.68 (-4.3%) | WIN   Rs+1,685
+    MEDPLUS      2026-03-12 | Entry=   830.3 | DVWAP=  841.58 (-1.3%) | AVWAP=  832.19 (-0.2%) | SL    Rs  -245
+    GPIL         2026-03-12 | Entry=  252.45 | DVWAP=  260.57 (-3.1%) | AVWAP=  252.89 (-0.2%) | WIN   Rs+1,228
+
+====================================================================================================
+  FINAL ANSWER — DOES VWAP HELP?
+====================================================================================================
+
+  Approach                                       Trades    WR%          P&L  vs Baseline
+  -------------------------------------------------------------------------------------
+  Baseline (EOD green)                               65  50.8%      +32,740            —
+  + Daily VWAP filter                                44  52.3%      +25,082       -7,658
+  + Anchored VWAP filter                             40  65.0%      +26,263       -6,477
+  + Both VWAPs filter                                30  63.3%      +20,426      -12,314
+
+  VERDICT:
+  ❌ Daily VWAP does NOT help vs baseline
+  ❌ Anchored VWAP does NOT help vs baseline
+
+  Total time: 124s
+
+Done!

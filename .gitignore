@@ -1,0 +1,30 @@
+# Sensitive / credentials
+angel_credentials.json
+angel_auth_token.json
+*.token
+config.json
+
+# Database (too large)
+nse_data.db
+optimised_backtest.db
+winner_analysis.db
+*.db
+
+# Trades & personal data
+angel_trades.json
+
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# Backups
+*.tar.gz
+*.zip
+*.bak

@@ -1,0 +1,47 @@
+nohup: ignoring input
+======================================================================
+  HV HIGH BREAKOUT BACKTEST V2
+  180d HV window | 5x volume | 10+ tests | Fundamentals
+======================================================================
+Available days: 59
+Date range    : 2026-03-02 to 2026-05-29
+
+Fetching fundamental scores...
+(This takes ~15 mins for all stocks)
+Building fundamental scores for 772 stocks...
+  [0/772] 360ONE: score=43
+  [50/772] ASAHIINDIA: score=36
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: BANKNIFTY.NS"}}}
+  [100/772] BLUESTARCO: score=26
+  [150/772] CRAFTSMAN: score=56
+  [200/772] ETHOSLTD: score=28
+  [250/772] GRINDWELL: score=46
+  [300/772] INDGN: score=41
+  [350/772] JTEKTINDIA: score=38
+  [400/772] LLOYDSME: score=80
+  [450/772] NAM-INDIA: score=60
+  [500/772] PARACABLES: score=15
+  [600/772] SHAREINDIA: score=63
+  [650/772] SWSOLAR: score=25
+  [700/772] TVSHLTD: score=45
+  [750/772] WEBELSOLAR: score=70
+Saved 759 scores
+
+Fundamental score distribution:
+  Score 100-109:    1 stocks
+  Score  90-99:    6 stocks
+  Score  80-89:   18 stocks
+  Score  70-79:   60 stocks
+  Score  60-69:   72 stocks
+  Score  50-59:   96 stocks
+  Score  40-49:  154 stocks
+  Score  30-39:  113 stocks
+  Score  20-29:   95 stocks
+  Score  10-19:   63 stocks
+  Score   0-9:   81 stocks
+
+Strong fundamental stocks (score>=50): 253
+
+======================================================================
+Running HV Breakout V2 backtest...
+  Day 10/59: 2026-03-17 | Capital: Rs31,636 | Open: 2 | Trades: 4 | Time: 49s

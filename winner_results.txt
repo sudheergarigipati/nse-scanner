@@ -1,0 +1,108 @@
+nohup: ignoring input
+Starting winner analysis...
+Resuming from: 2024-05-01
+Valid symbols: 766 | Trading days: 516
+Batch 1/16: 360ONE to ARVINDFASN...
+  Saved 515 signals | Total so far: 515
+Batch 2/16: ASAHIINDIA to BOROLTD...
+  Saved 500 signals | Total so far: 1015
+Batch 3/16: BOSCHLTD to CREDITACC...
+  Saved 553 signals | Total so far: 1568
+Batch 4/16: CRISIL to EUROBOND...
+  Saved 540 signals | Total so far: 2108
+Batch 5/16: EXIDEIND to GRSE...
+  Saved 604 signals | Total so far: 2712
+Batch 6/16: GSPL to INDIACEM...
+  Saved 581 signals | Total so far: 3293
+Batch 7/16: INDIAMART to JUBLINGREA...
+  Saved 503 signals | Total so far: 3796
+Batch 8/16: JUBLPHARMA to LTF...
+  Saved 473 signals | Total so far: 4269
+Batch 9/16: LTFOODS to NAUKRI...
+  Saved 503 signals | Total so far: 4772
+Batch 10/16: NAVA to PAYTM...
+  Saved 516 signals | Total so far: 5288
+Batch 11/16: PCBL to RAMKY...
+  Saved 512 signals | Total so far: 5800
+Batch 12/16: RANEHOLDIN to SIEMENS...
+  Saved 526 signals | Total so far: 6326
+Batch 13/16: SIGNATURE to TAKE...
+  Saved 502 signals | Total so far: 6828
+Batch 14/16: TALBROAUTO to UCOBANK...
+  Saved 445 signals | Total so far: 7273
+Batch 15/16: UFLEX to WHEELS...
+  Saved 464 signals | Total so far: 7737
+Batch 16/16: WHIRLPOOL to ZYDUSWELL...
+  Saved 165 signals | Total so far: 7902
+
+======================================================================
+  WINNER ANALYSIS RESULTS
+======================================================================
+  Total signals : 7902
+  Wins (hit HV) : 2250  (28.5%)
+  SL hits       : 5543 (70.1%)
+  Beyond HV     : 2222  (28.1%)
+
+  HV AGE ANALYSIS:
+    Age   7- 30d:  1438 signals | WR  35.5% | Avg P&L Rs    +427
+    Age  31- 60d:  1887 signals | WR  29.2% | Avg P&L Rs    +336
+    Age  61- 90d:  1685 signals | WR  26.2% | Avg P&L Rs    +292
+    Age  91-120d:  1533 signals | WR  25.6% | Avg P&L Rs    +302
+    Age 121-150d:  1359 signals | WR  26.1% | Avg P&L Rs    +329
+
+  VOLUME RATIO on signal day:
+    Vol 0.00x-0.75x:  2758 signals | WR  23.9% | Avg P&L Rs    +270
+    Vol 0.75x-1.00x:  1955 signals | WR  26.6% | Avg P&L Rs    +289
+    Vol 1.00x-1.50x:  1698 signals | WR  28.3% | Avg P&L Rs    +318
+    Vol 1.50x-2.00x:   603 signals | WR  35.5% | Avg P&L Rs    +425
+    Vol 2.00x-99.00x:   887 signals | WR  42.2% | Avg P&L Rs    +615
+
+  R:R ANALYSIS:
+    R:R   5-  8x:  1931 signals | WR  46.0% | Avg P&L Rs    +417
+    R:R   8- 12x:  2318 signals | WR  29.0% | Avg P&L Rs    +329
+    R:R  12- 20x:  2450 signals | WR  21.7% | Avg P&L Rs    +320
+    R:R  20- 50x:  1167 signals | WR  13.5% | Avg P&L Rs    +254
+    R:R  50-999x:    36 signals | WR   2.8% | Avg P&L Rs     +81
+
+  HV DAY STRENGTH:
+    HV 1x-2x:   211 signals | WR  33.6% | Avg P&L Rs    +300
+    HV 2x-3x:   826 signals | WR  35.2% | Avg P&L Rs    +357
+    HV 3x-5x:  1951 signals | WR  31.5% | Avg P&L Rs    +302
+    HV 5x-10x:  2460 signals | WR  29.1% | Avg P&L Rs    +354
+    HV 10x-99x:  2368 signals | WR  22.9% | Avg P&L Rs    +340
+
+  TOP 20 BEYOND-HV WINNERS:
+  Symbol       Date            Entry   Target  Beyond%  HVAge    RR  VolR  HVVolR  Days
+  --------------------------------------------------------------------------------
+  SHARDACROP   2025-07-23     862.80   911.92    18.3%     20   8.3   0.6     3.8x     2
+  CRISIL       2024-12-30    5423.53  5767.23    17.9%     17   8.6   1.5     7.4x     1
+  AARTIIND     2026-01-30     352.82   382.80    16.0%     46  14.1   2.5    22.3x     2
+  SUNDRMBRAK   2025-07-17     785.72   860.00    15.7%     52   8.1   1.1    11.2x     3
+  SUNDRMBRAK   2025-07-21     815.13   860.00    15.7%     56  15.6   1.3    11.6x     1
+  MAANALU      2025-11-27     134.90   140.88    15.5%     34   8.9   3.6     6.7x     1
+  SURYODAY     2025-09-09     124.29   139.90    15.4%    141  23.1   1.8     9.8x    16
+  SURYODAY     2025-09-15     125.77   139.90    15.4%    147  11.4   0.8     8.2x    12
+  SURYODAY     2025-09-16     126.12   139.90    15.4%    148  16.6   1.5     8.3x    11
+  RANEHOLDIN   2024-06-24    1201.73  1343.52    14.9%     40  17.8   8.0    15.8x     5
+  NETWORK18    2025-06-23      51.86    55.18    14.8%     25   8.3   1.2     2.7x     2
+  ASIANTILES   2024-06-12      62.01    66.10    14.5%     20   8.7  15.9     4.9x     1
+  VETO         2025-05-23     104.84   114.90    13.6%     52  11.5   0.6     5.3x     4
+  LGBBROSLTD   2025-10-29    1394.57  1458.00    13.2%     37   7.4   0.6     4.5x     3
+  TRIVENI      2024-08-12     373.15   421.15    12.9%     54  33.1   0.7    11.7x     4
+  SCHNEIDER    2025-05-27     674.66   702.00    12.7%    104   6.9  14.0     6.6x     1
+  POKARNA      2024-05-17     497.07   539.77    12.7%    101   7.9   6.1     8.9x     1
+  GRSE         2025-05-09    1735.91  2005.81    12.1%     10   9.5   1.1     5.2x     3
+  SCI          2026-04-13     241.18   262.70    11.9%     63  10.2   1.5    20.4x     2
+  BFUTILITIE   2024-10-03     892.21   978.80    11.9%      9   5.8   2.2     5.5x     1
+
+  WINNERS vs LOSERS PROFILE:
+  Metric                         Winners       Losers
+  --------------------------------------------------
+  hv_age                           69.25        75.52
+  rr                               10.81        14.66
+  vol_ratio                         1.73         1.21
+  hv_vol_ratio                      9.53        13.11
+  candle_str                       43.81        33.96
+  days_held                         4.58         3.85
+
+Done!

@@ -1,0 +1,92 @@
+nohup: ignoring input
+======================================================================
+  WEEKLY CAMARILLA BACKTEST — 3 SCENARIOS
+  All stocks | Mar-May 2026 | 15-min data
+======================================================================
+Available days: 59
+Date range    : 2026-03-02 to 2026-05-29
+
+Running all 4 scenarios...
+
+  Running S1_PureWeekly: Pure Weekly (entry+SL at weekly L3/L4)...
+  Done! Trades=12 WR=33.3% P&L=Rs+4,211 Time=168s
+
+  Running S2_Hybrid: Hybrid (Daily entry + Weekly SL)...
+  Done! Trades=8 WR=37.5% P&L=Rs+1,222 Time=340s
+
+  Running S3_Confluence: Confluence (Daily L3 near Weekly L3 ±2%)...
+  Done! Trades=35 WR=48.6% P&L=Rs+12,816 Time=510s
+
+  Running S0_Baseline: Baseline Approach B (daily only, no weekly)...
+  Done! Trades=49 WR=57.1% P&L=Rs+28,247 Time=672s
+
+================================================================================
+  SCENARIO COMPARISON
+================================================================================
+
+  Scenario                                  Trades    WR%    AvgWin   AvgLoss   W:L  SameCandleSL  AvgSLdist    TotalPnL
+  -------------------------------------------------------------------------------------------------------------------
+  Pure Weekly (entry+SL at weekly L3/L4)        12  33.3%    +1,857      -422   4.4             1      21.95      +4,211
+  Hybrid (Daily entry + Weekly SL)               8  37.5%      +929      -345   2.7             0      19.79      +1,222
+  Confluence (Daily L3 near Weekly L3 ±2%)      35  48.6%      +976      -219   4.5             2      19.17     +12,816
+  Baseline Approach B (daily only, no weekly)      49  57.1%    +1,158      -238   4.9             2      14.91     +28,247
+
+================================================================================
+  MONTHLY BREAKDOWN
+================================================================================
+
+  Pure Weekly (entry+SL at weekly L3/L4):
+    2026-03: Trades=  7 Wins=  1 WR= 14.3% P&L=Rs     -333
+    2026-04: Trades=  2 Wins=  2 WR=100.0% P&L=Rs   +3,727
+    2026-05: Trades=  3 Wins=  1 WR= 33.3% P&L=Rs     +816
+    TOTAL : Trades= 12 Wins=  4 WR= 33.3% P&L=Rs   +4,210
+
+  Hybrid (Daily entry + Weekly SL):
+    2026-03: Trades=  7 Wins=  2 WR= 28.6% P&L=Rs     +256
+    2026-04: Trades=  0 Wins=  0 WR=    0% P&L=Rs       +0
+    2026-05: Trades=  1 Wins=  1 WR=100.0% P&L=Rs     +967
+    TOTAL : Trades=  8 Wins=  3 WR= 37.5% P&L=Rs   +1,223
+
+  Confluence (Daily L3 near Weekly L3 ±2%):
+    2026-03: Trades= 14 Wins=  3 WR= 21.4% P&L=Rs     -143
+    2026-04: Trades= 13 Wins= 11 WR= 84.6% P&L=Rs  +11,039
+    2026-05: Trades=  8 Wins=  3 WR= 37.5% P&L=Rs   +1,922
+    TOTAL : Trades= 35 Wins= 17 WR= 48.6% P&L=Rs  +12,818
+
+  Baseline Approach B (daily only, no weekly):
+    2026-03: Trades= 19 Wins=  4 WR= 21.1% P&L=Rs     +345
+    2026-04: Trades= 17 Wins= 16 WR= 94.1% P&L=Rs  +19,487
+    2026-05: Trades= 13 Wins=  8 WR= 61.5% P&L=Rs   +8,417
+    TOTAL : Trades= 49 Wins= 28 WR= 57.1% P&L=Rs  +28,249
+
+================================================================================
+  KEY INSIGHTS
+================================================================================
+
+  Pure Weekly (entry+SL at weekly L3/L4):
+    Same day exits   : 4 trades | 75.0% WR
+    Same candle SL   : 1 hits
+    Avg SL distance  : Rs 21.95
+    Win:Loss ratio   : 4.4:1
+
+  Hybrid (Daily entry + Weekly SL):
+    Same day exits   : 4 trades | 75.0% WR
+    Same candle SL   : 0 hits
+    Avg SL distance  : Rs 19.79
+    Win:Loss ratio   : 2.7:1
+
+  Confluence (Daily L3 near Weekly L3 ±2%):
+    Same day exits   : 27 trades | 44.4% WR
+    Same candle SL   : 2 hits
+    Avg SL distance  : Rs 19.17
+    Win:Loss ratio   : 4.5:1
+
+  Baseline Approach B (daily only, no weekly):
+    Same day exits   : 36 trades | 55.6% WR
+    Same candle SL   : 2 hits
+    Avg SL distance  : Rs 14.91
+    Win:Loss ratio   : 4.9:1
+
+  Total time: 672s
+
+Done!

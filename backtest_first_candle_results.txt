@@ -1,0 +1,72 @@
+nohup: ignoring input
+======================================================================
+  FIRST CANDLE GREEN — CLEAN BACKTEST
+  Can we replace EOD green with 9:30 AM check?
+======================================================================
+Available days : 59
+Date range     : 2026-03-02 to 2026-05-29
+
+Scanning all signals...
+  Day 10/59: 2026-03-17 | Trades so far: 38 | Time: 19s
+  Day 20/59: 2026-04-02 | Trades so far: 88 | Time: 40s
+  Day 30/59: 2026-04-20 | Trades so far: 112 | Time: 61s
+  Day 40/59: 2026-05-04 | Trades so far: 129 | Time: 81s
+  Day 50/59: 2026-05-18 | Trades so far: 144 | Time: 102s
+
+Total trades found: 174
+
+==========================================================================================
+  ANALYSIS 1 — EOD GREEN vs FIRST CANDLE GREEN
+==========================================================================================
+
+  Filter                                   Trades   WR%   AvgWin  AvgLoss   AvgPnL       Total
+  ------------------------------------------------------------------------------------------
+  A: EOD✅ + 1st candle✅ (both green)       Trades=  27 WR= 44.4% AvgWin= +1,096 AvgLoss=   -249 AvgPnL=   +348 Total=    +9,408
+  B: EOD✅ + 1st candle❌ (eod only)         Trades=  38 WR= 55.3% AvgWin= +1,256 AvgLoss=   -243 AvgPnL=   +585 Total=   +22,237
+  C: EOD❌ + 1st candle✅ (1st only)         Trades=  44 WR=  4.5% AvgWin= +1,423 AvgLoss=   -266 AvgPnL=   -189 Total=    -8,336
+  D: EOD❌ + 1st candle❌ (both red)         Trades=  62 WR=  6.5% AvgWin= +1,168 AvgLoss=   -216 AvgPnL=   -127 Total=    -7,878
+
+  Combined Filter                          Trades   WR%   AvgWin  AvgLoss   AvgPnL       Total
+  ------------------------------------------------------------------------------------------
+  BASELINE: EOD green only                 Trades=  65 WR= 50.8% AvgWin= +1,198 AvgLoss=   -246 AvgPnL=   +487 Total=   +31,645
+  NEW: First candle green only             Trades=  71 WR= 19.7% AvgWin= +1,143 AvgLoss=   -262 AvgPnL=    +15 Total=    +1,072
+  NEW: 1st OR 2nd candle green             Trades= 113 WR= 24.8% AvgWin= +1,219 AvgLoss=   -249 AvgPnL=   +115 Total=   +12,952
+  STRICT: Both EOD + 1st green             Trades=  27 WR= 44.4% AvgWin= +1,096 AvgLoss=   -249 AvgPnL=   +348 Total=    +9,408
+  ALL trades (no green filter)             Trades= 171 WR= 22.8% AvgWin= +1,206 AvgLoss=   -239 AvgPnL=    +90 Total=   +15,431
+
+==========================================================================================
+  ANALYSIS 2 — ENTRY TIME
+==========================================================================================
+
+  Time            Trades   WR%   AvgPnL       Total
+  --------------------------------------------------
+  9:30-10:00          78 28.2%     +166     +12,984
+  10:00-11:00         32 12.5%      -20        -636
+  11:00-13:00         37 18.9%      +27      +1,001
+  13:00-15:30         24 25.0%      +87      +2,082
+
+==========================================================================================
+  ANALYSIS 3 — MONTHLY (First Candle Green filter)
+==========================================================================================
+
+  Month       Trades   Wins    WR%          P&L
+  ---------------------------------------------
+  2026-03         35      1   2.9%       -8,138
+  2026-04         19      9  47.4%       +8,206
+  2026-05         17      4  23.5%       +1,004
+  ---------------------------------------------
+  TOTAL           71     14  19.7%       +1,072
+
+==========================================================================================
+  FINAL ANSWER
+==========================================================================================
+
+  EOD green filter  :   65 trades |  50.8% WR | Rs  +31,645
+  1st candle green  :   71 trades |  19.7% WR | Rs   +1,072
+
+  Can 1st candle green REPLACE EOD green?
+  ❌ NO — 1st candle green much worse than EOD green
+
+  Total time: 122s
+
+Done!

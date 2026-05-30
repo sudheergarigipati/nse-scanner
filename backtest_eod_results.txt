@@ -1,0 +1,96 @@
+nohup: ignoring input
+======================================================================
+  EOD SIGNAL BACKTEST
+  Signal at 4:15 PM | LIMIT next day | GTT SL+Target
+======================================================================
+Available days : 59
+Date range     : 2026-03-02 to 2026-05-29
+
+Filters (EOD — all confirmed):
+  ✅ Green candle (close > open) — confirmed at EOD
+  ✅ Volume >= 1.5x — confirmed at EOD
+  ✅ HV alignment within 4%
+  ✅ RR >= 8x (raised from 5x)
+  ✅ HV vol ratio <= 10x
+  ✅ Price >= Rs 50
+
+Entry logic:
+  Signal fires today at EOD
+  LIMIT order placed at L3 for TOMORROW
+  If tomorrow's price touches L3 → fills
+  If tomorrow gaps above L3 → NOT filled (missed)
+
+Running backtest...
+  Day 10/59: 2026-03-17 | Capital: Rs59,597 | Open: 0 | Trades: 2 | Pending: 4 | Time: 20s
+  Day 20/59: 2026-04-02 | Capital: Rs38,577 | Open: 1 | Trades: 6 | Pending: 1 | Time: 42s
+  Day 30/59: 2026-04-20 | Capital: Rs18,543 | Open: 2 | Trades: 9 | Pending: 2 | Time: 63s
+  Day 40/59: 2026-05-04 | Capital: Rs38,045 | Open: 1 | Trades: 11 | Pending: 0 | Time: 83s
+  Day 50/59: 2026-05-18 | Capital: Rs58,432 | Open: 0 | Trades: 12 | Pending: 2 | Time: 104s
+
+Closing remaining open positions...
+
+======================================================================
+  EOD SIGNAL BACKTEST RESULTS
+======================================================================
+
+  Month        Sig  Fill  NFill  Trades   Wins    SL    WR%          P&L
+  ----------------------------------------------------------------------
+  2026-03       32     7     24       7      0     7   0.0%       -1,642
+  2026-04       12     5      8       5      1     4  20.0%          +74
+  2026-05       10     3      5       2      0     2   0.0%       +2,476
+  ----------------------------------------------------------------------
+  TOTAL         54    15     37      14      1    13   7.1%         +909
+
+  KEY STATS:
+  Total signals  : 54
+  Fill rate      : 27.8% (15 filled / 37 not filled)
+  Gap ups missed : 12
+  No touch missed: 25
+  Total trades   : 14
+  Win rate       : 7.1%
+  Avg win        : Rs +1,290
+  Avg loss       : Rs -250
+  Win:Loss ratio : 5.2:1
+  Total P&L      : Rs +909
+  Final capital  : Rs 38,011
+
+  DAYS HELD:
+  Same day    : Trades=  11 WR=  0.0% AvgPnL=Rs   -254
+  Day 1       : Trades=   1 WR=  0.0% AvgPnL=Rs   -213
+  Day 4+      : Trades=   2 WR= 50.0% AvgPnL=Rs   +522
+
+  R:R BREAKDOWN:
+  RR 8-12x   : Trades=  11 WR=  0.0% AvgWin=Rs     +0 AvgLoss=Rs   -248 Total=Rs   -2,727
+  RR 12-16x  : Trades=   2 WR=  0.0% AvgWin=Rs     +0 AvgLoss=Rs   -262 Total=Rs     -525
+  RR 16-20x  : Trades=   1 WR=100.0% AvgWin=Rs +1,290 AvgLoss=Rs     +0 Total=Rs   +1,290
+
+  TRADE LOG:
+  Stock        Signal       Entry DT           Exit DT               Entry     Exit    RR  Days Result          P&L
+  --------------------------------------------------------------------------------------------------------------
+  SBICARD      2026-03-05   2026-03-06 15:15   2026-03-09 09:15     724.35   717.95  11.8     0 ❌SL        Rs   -173
+  MGL          2026-03-11   2026-03-12 09:30   2026-03-13 11:00    1038.80  1026.69  10.2     0 ❌SL        Rs   -230
+  ITC          2026-03-16   2026-03-17 09:30   2026-03-18 10:00     306.75   304.15  10.5     0 ❌SL        Rs   -169
+  BHARTIHEXA   2026-03-19   2026-03-20 15:15   2026-03-23 09:15    1579.50  1556.64   8.9     0 ❌SL        Rs   -274
+  INFY         2026-03-20   2026-03-23 09:45   2026-04-23 15:15    1251.70  1236.32  13.4    18 ❌SL        Rs   -246
+  WINDMACHIN   2026-03-20   2026-03-23 14:00   2026-03-23 14:15     227.70   224.55  11.2     0 ❌SL        Rs   -274
+  TBOTEK       2026-03-25   2026-03-27 09:30   2026-03-30 10:45    1075.50  1060.20   8.4     0 ❌SL        Rs   -275
+  SAIL         2026-04-01   2026-04-02 14:00   2026-04-06 09:15     154.70   153.12   9.4     0 ❌SL        Rs   -203
+  SRF          2026-04-06   2026-04-07 09:30   2026-04-07 10:45    2426.20  2385.07   9.3     0 ❌SL        Rs   -329
+  CROMPTON     2026-04-08   2026-04-09 09:30   2026-04-09 09:45     246.15   241.21   8.3     0 ❌SL        Rs   -405
+  GRINDWELL    2026-04-16   2026-04-17 09:45   2026-05-08 09:15    1591.40  1698.90  16.1    14 ✅WIN       Rs +1,290
+  INDIANHUME   2026-04-22   2026-04-23 09:30   2026-04-24 12:30     328.85   324.28  12.9     0 ❌SL        Rs   -279
+  TEJASNET     2026-05-19   2026-05-20 09:30   OPEN                 455.15   520.40  10.9     6 ⏳OPEN      Rs +2,871
+  CESC         2026-05-25   2026-05-26 12:45   2026-05-29 15:00     183.99   182.02  11.6     1 ❌SL        Rs   -213
+  NHPC         2026-05-27   2026-05-29 12:45   2026-05-29 15:00      80.00    79.27   8.2     0 ❌SL        Rs   -182
+
+  FINAL COMPARISON:
+  Approach                                  Trades    WR%          P&L
+  ----------------------------------------------------------------------
+  Daily BT (hindsight)                          28  60.7%   Rs +23,291
+  Approach B (EOD filters+15min)                49  57.1%   Rs +28,249
+  Realistic (no EOD filters)                   122  16.4%   Rs    +846
+  EOD Signal (this test)                        14   7.1%         +909
+
+  Total time: 122s
+
+Done!

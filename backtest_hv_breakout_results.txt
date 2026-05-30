@@ -1,0 +1,95 @@
+nohup: ignoring input
+======================================================================
+  HV HIGH BREAKOUT BACKTEST
+  15-min entry | Proper capital management
+  All stocks | Mar-May 2026
+======================================================================
+Available days: 59
+Date range    : 2026-03-02 to 2026-05-29
+
+Strategy rules:
+  HV window  : 7-180 calendar days
+  Breakout   : 15-min close > HV High + vol >= 2x avg
+  Entry      : Next 15-min candle open
+  SL         : HV High - 0.5× range
+  Target     : HV High + 1.5× range
+  Capital    : Rs 60,000 | 3 positions | Rs 1,000 risk
+  Cooldown   : 7 days after any exit
+
+Running backtest...
+  Day 10/59: 2026-03-17 | Capital: Rs13,540 | Open: 3 | Trades: 7 | Time: 50s
+  Day 20/59: 2026-04-02 | Capital: Rs13,540 | Open: 3 | Trades: 7 | Time: 102s
+  Day 30/59: 2026-04-20 | Capital: Rs12,990 | Open: 3 | Trades: 11 | Time: 155s
+  Day 40/59: 2026-05-04 | Capital: Rs13,863 | Open: 3 | Trades: 13 | Time: 207s
+  Day 50/59: 2026-05-18 | Capital: Rs13,863 | Open: 3 | Trades: 13 | Time: 259s
+
+Closing remaining open positions...
+
+======================================================================
+  HV HIGH BREAKOUT BACKTEST RESULTS
+======================================================================
+
+  Month        Sig  Fill  Trades   Wins    SL  Open    WR%          P&L
+  -----------------------------------------------------------------
+  2026-03     1179    10       8      1     7     0  12.5%       -4,419
+  2026-04      278     6       6      4     2     0  66.7%       +5,473
+  2026-05       10     1       0      0     0     3     0%           +2
+  -----------------------------------------------------------------
+  TOTAL       1467    17      14      5     9     3  35.7%       +1,057
+
+  KEY STATS:
+  Total signals  : 1467
+  Fill rate      : 1.2% (17 filled)
+  Total trades   : 14
+  Win rate       : 35.7%
+  Avg win        : Rs +1,666
+  Avg loss       : Rs -808
+  Win:Loss ratio : 2.1:1
+  Total P&L      : Rs +1,057
+  Final capital  : Rs 22,371
+
+  DAYS HELD:
+  Day 1       : Trades=   5 WR= 20.0% AvgPnL=Rs   -212
+  Day 2       : Trades=   5 WR= 40.0% AvgPnL=Rs    -64
+  Day 4+      : Trades=   4 WR= 50.0% AvgPnL=Rs   +610
+
+  BREAKOUT VOLUME ANALYSIS:
+  Vol 2-5x    : Trades=   8 WR= 25.0% AvgPnL=Rs    -79
+  Vol 5-10x   : Trades=   5 WR= 60.0% AvgPnL=Rs   +447
+  Vol 10-20x  : Trades=   1 WR=  0.0% AvgPnL=Rs   -551
+
+  RESISTANCE TESTS ANALYSIS:
+  0-5 tests   : Trades=   2 WR=  0.0% AvgPnL=Rs   -940
+  5-15 tests  : Trades=   5 WR= 40.0% AvgPnL=Rs   +143
+  15+ tests   : Trades=   7 WR= 42.9% AvgPnL=Rs   +317
+
+  TRADE LOG:
+  Stock        Entry DT           Exit DT               Entry     Exit   HVHigh   Range    Vol  Tests  Days Result          P&L
+  -------------------------------------------------------------------------------------------------------------------
+  BANKBARODA   2026-03-04 10:00   2026-03-09 09:15     300.95   288.12   293.25   10.25   2.8x     24     2 ❌SL        Rs   -847
+  CHENNPETRO   2026-03-04 13:15   2026-03-09 15:15     999.75   930.13   990.16  120.05   6.4x      0     2 ❌SL        Rs   -975
+  MFSL         2026-03-04 15:15   2026-03-09 09:15    1749.00  1663.85  1727.70  127.70   2.9x     21     2 ❌SL        Rs   -937
+  FINCABLES    2026-03-09 09:30   2026-03-11 10:30     947.30   904.20   942.00   75.60   2.2x      3     1 ❌SL        Rs   -905
+  ANURAS       2026-03-09 15:15   2026-03-16 10:45    1263.00  1218.05  1255.00   73.90   8.4x     15     4 ❌SL        Rs   -674
+  DIXON        2026-03-10 15:15   2026-03-12 09:15   10890.00 10339.00 10843.00 1008.00  12.0x      8     1 ❌SL        Rs   -551
+  CANFINHOME   2026-03-11 09:30   2026-03-13 14:00     865.80   823.21   842.56   38.70   2.0x      5     1 ❌SL        Rs   -980
+  IPCALAB      2026-03-12 15:15   OPEN                1558.70  1524.40  1548.00  243.00   3.1x     14    51 ⏳OPEN      Rs   -240
+  ADANIPOWER   2026-03-13 09:45   2026-04-06 09:15     148.22   161.89   144.60   11.53   7.3x     33    12 ✅WIN       Rs +1,449
+  CHENNPETRO   2026-03-16 15:00   OPEN                 997.85  1058.20   990.16  120.05  12.5x      2    49 ⏳OPEN      Rs   +845
+  NMDC         2026-04-06 09:45   2026-04-09 09:15      80.09    84.90    79.87    3.35   6.6x     32     2 ✅WIN       Rs +1,198
+  CANFINHOME   2026-04-09 11:30   2026-04-13 09:15     845.75   823.21   842.56   38.70   2.8x     19     1 ❌SL        Rs   -518
+  RRKABEL      2026-04-13 13:30   2026-04-17 09:15    1374.80  1478.01  1342.05   90.64   6.5x      9     2 ✅WIN       Rs +1,239
+  NUVAMA       2026-04-17 15:15   2026-04-24 15:15    1402.00  1338.70  1400.87  124.34   2.0x      7     4 ❌SL        Rs   -886
+  CUB          2026-04-24 15:15   2026-04-28 09:15     262.36   287.25   260.79   17.64   2.3x      9     1 ✅WIN       Rs +1,892
+  UNIPARTS     2026-04-28 09:30   2026-05-26 09:15     520.00   587.11   517.87   46.16   2.5x     16    19 ✅WIN       Rs +2,550
+  WINDMACHIN   2026-05-26 12:00   OPEN                 300.05   286.95   295.00   32.90   2.1x     12     2 ⏳OPEN      Rs   -603
+
+  COMPARISON:
+  Strategy                                  Trades    WR%          P&L
+  ----------------------------------------------------------------------
+  HV Low Bounce (Approach B)                    49  57.1%   Rs +28,249
+  HV High Breakout (this)                       14  35.7%       +1,057
+
+  Total time: 308s
+
+Done!

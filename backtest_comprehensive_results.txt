@@ -1,0 +1,166 @@
+nohup: ignoring input
+======================================================================
+  COMPREHENSIVE BACKTEST — OPTIONS A TO E
+  All stocks | Mar-May 2026 | 15-min data
+======================================================================
+Available days: 59
+Date range    : 2026-03-02 to 2026-05-29
+
+[1/18] BASELINE: Approach B baseline (EOD green+vol)
+  → Trades=49 WR=57.1% AvgWin=Rs+1,158 AvgLoss=Rs-238 W:L=4.9 P&L=Rs+28,247 [0s]
+
+[2/18] A1_2PM_GREEN: A: 2PM green check only
+  → Trades=52 WR=44.2% AvgWin=Rs+1,230 AvgLoss=Rs-282 W:L=4.4 P&L=Rs+20,673 [116s]
+
+[3/18] A2_2PM_BEFORE_ENTRY: A+B: 2PM green + entry before 2PM
+  → Trades=50 WR=48.0% AvgWin=Rs+1,219 AvgLoss=Rs-274 W:L=4.4 P&L=Rs+22,691 [233s]
+
+[4/18] C1_ENTRY_VOL_1x: C: Entry candle vol >= 1x avg/candle
+  → Trades=46 WR=56.5% AvgWin=Rs+1,139 AvgLoss=Rs-254 W:L=4.5 P&L=Rs+24,691 [351s]
+
+[5/18] C2_ENTRY_VOL_2x: C: Entry candle vol >= 2x avg/candle
+  → Trades=31 WR=51.6% AvgWin=Rs+1,174 AvgLoss=Rs-227 W:L=5.2 P&L=Rs+15,382 [468s]
+
+[6/18] C3_ENTRY_VOL_3x: C: Entry candle vol >= 3x avg/candle
+  → Trades=23 WR=34.8% AvgWin=Rs+984 AvgLoss=Rs-226 W:L=4.4 P&L=Rs+4,472 [586s]
+
+[7/18] D1_RR_5: D: RR >= 5x (baseline)
+  → Trades=49 WR=57.1% AvgWin=Rs+1,158 AvgLoss=Rs-238 W:L=4.9 P&L=Rs+28,247 [705s]
+
+[8/18] D2_RR_7: D: RR >= 7x
+  → Trades=38 WR=44.7% AvgWin=Rs+1,412 AvgLoss=Rs-242 W:L=5.8 P&L=Rs+19,348 [823s]
+
+[9/18] D3_RR_8: D: RR >= 8x
+  → Trades=32 WR=46.9% AvgWin=Rs+1,528 AvgLoss=Rs-240 W:L=6.4 P&L=Rs+19,265 [941s]
+
+[10/18] D4_RR_10: D: RR >= 10x
+  → Trades=25 WR=48.0% AvgWin=Rs+1,526 AvgLoss=Rs-236 W:L=6.5 P&L=Rs+15,412 [1059s]
+
+[11/18] D5_RR_12: D: RR >= 12x
+  → Trades=15 WR=53.3% AvgWin=Rs+1,428 AvgLoss=Rs-188 W:L=7.6 P&L=Rs+10,274 [1178s]
+
+[12/18] E1_COOL_5: E: Cooldown 5 days after SL
+  → Trades=49 WR=57.1% AvgWin=Rs+1,158 AvgLoss=Rs-238 W:L=4.9 P&L=Rs+28,247 [1297s]
+
+[13/18] E2_COOL_10: E: Cooldown 10 days (baseline)
+  → Trades=49 WR=57.1% AvgWin=Rs+1,158 AvgLoss=Rs-238 W:L=4.9 P&L=Rs+28,247 [1415s]
+
+[14/18] E3_COOL_15: E: Cooldown 15 days after SL
+  → Trades=49 WR=57.1% AvgWin=Rs+1,158 AvgLoss=Rs-238 W:L=4.9 P&L=Rs+28,247 [1533s]
+
+[15/18] E4_COOL_0: E: No cooldown
+  → Trades=49 WR=57.1% AvgWin=Rs+1,158 AvgLoss=Rs-238 W:L=4.9 P&L=Rs+28,247 [1651s]
+
+[16/18] COMBO1: COMBO: RR>=8 + 2PM green
+  → Trades=33 WR=42.4% AvgWin=Rs+1,517 AvgLoss=Rs-243 W:L=6.2 P&L=Rs+16,784 [1768s]
+
+[17/18] COMBO2: COMBO: RR>=10 + 2PM green
+  → Trades=25 WR=48.0% AvgWin=Rs+1,526 AvgLoss=Rs-206 W:L=7.4 P&L=Rs+15,799 [1886s]
+
+[18/18] COMBO3: COMBO: RR>=8 + vol>=2x + 2PM green
+  → Trades=22 WR=40.9% AvgWin=Rs+1,350 AvgLoss=Rs-220 W:L=6.1 P&L=Rs+9,293 [2003s]
+
+==========================================================================================
+  COMPREHENSIVE RESULTS — ALL OPTIONS A TO E
+==========================================================================================
+
+  Test                      Desc                                        Trades    WR%   AvgWin  AvgLoss   W:L    TotalPnL
+  -------------------------------------------------------------------------------------------------------------------
+  BASELINE                  Approach B baseline (EOD green+vol)             49  57.1%   +1,158     -238   4.9     +28,247
+  D1_RR_5                   D: RR >= 5x (baseline)                          49  57.1%   +1,158     -238   4.9     +28,247
+  E1_COOL_5                 E: Cooldown 5 days after SL                     49  57.1%   +1,158     -238   4.9     +28,247
+  E2_COOL_10                E: Cooldown 10 days (baseline)                  49  57.1%   +1,158     -238   4.9     +28,247
+  E3_COOL_15                E: Cooldown 15 days after SL                    49  57.1%   +1,158     -238   4.9     +28,247
+  E4_COOL_0                 E: No cooldown                                  49  57.1%   +1,158     -238   4.9     +28,247
+  C1_ENTRY_VOL_1x           C: Entry candle vol >= 1x avg/candle            46  56.5%   +1,139     -254   4.5     +24,691
+  A2_2PM_BEFORE_ENTRY       A+B: 2PM green + entry before 2PM               50  48.0%   +1,219     -274   4.4     +22,691
+  A1_2PM_GREEN              A: 2PM green check only                         52  44.2%   +1,230     -282   4.4     +20,673
+  D2_RR_7                   D: RR >= 7x                                     38  44.7%   +1,412     -242   5.8     +19,348
+  D3_RR_8                   D: RR >= 8x                                     32  46.9%   +1,528     -240   6.4     +19,265
+  COMBO1                    COMBO: RR>=8 + 2PM green                        33  42.4%   +1,517     -243   6.2     +16,784
+  COMBO2                    COMBO: RR>=10 + 2PM green                       25  48.0%   +1,526     -206   7.4     +15,799
+  D4_RR_10                  D: RR >= 10x                                    25  48.0%   +1,526     -236   6.5     +15,412
+  C2_ENTRY_VOL_2x           C: Entry candle vol >= 2x avg/candle            31  51.6%   +1,174     -227   5.2     +15,382
+  D5_RR_12                  D: RR >= 12x                                    15  53.3%   +1,428     -188   7.6     +10,274
+  COMBO3                    COMBO: RR>=8 + vol>=2x + 2PM green              22  40.9%   +1,350     -220   6.1      +9,293
+  C3_ENTRY_VOL_3x           C: Entry candle vol >= 3x avg/candle            23  34.8%     +984     -226   4.4      +4,472
+
+==========================================================================================
+  MONTHLY BREAKDOWN — TOP 5 BY P&L
+==========================================================================================
+
+  BASELINE: Approach B baseline (EOD green+vol)
+    2026-03: Trades= 19 Wins=  4 WR= 21.1% P&L=Rs     +345
+    2026-04: Trades= 17 Wins= 16 WR= 94.1% P&L=Rs  +19,487
+    2026-05: Trades= 13 Wins=  8 WR= 61.5% P&L=Rs   +8,417
+    TOTAL : Trades= 49 Wins= 28 WR= 57.1% P&L=Rs  +28,249
+
+  D1_RR_5: D: RR >= 5x (baseline)
+    2026-03: Trades= 19 Wins=  4 WR= 21.1% P&L=Rs     +345
+    2026-04: Trades= 17 Wins= 16 WR= 94.1% P&L=Rs  +19,487
+    2026-05: Trades= 13 Wins=  8 WR= 61.5% P&L=Rs   +8,417
+    TOTAL : Trades= 49 Wins= 28 WR= 57.1% P&L=Rs  +28,249
+
+  E1_COOL_5: E: Cooldown 5 days after SL
+    2026-03: Trades= 19 Wins=  4 WR= 21.1% P&L=Rs     +345
+    2026-04: Trades= 17 Wins= 16 WR= 94.1% P&L=Rs  +19,487
+    2026-05: Trades= 13 Wins=  8 WR= 61.5% P&L=Rs   +8,417
+    TOTAL : Trades= 49 Wins= 28 WR= 57.1% P&L=Rs  +28,249
+
+  E2_COOL_10: E: Cooldown 10 days (baseline)
+    2026-03: Trades= 19 Wins=  4 WR= 21.1% P&L=Rs     +345
+    2026-04: Trades= 17 Wins= 16 WR= 94.1% P&L=Rs  +19,487
+    2026-05: Trades= 13 Wins=  8 WR= 61.5% P&L=Rs   +8,417
+    TOTAL : Trades= 49 Wins= 28 WR= 57.1% P&L=Rs  +28,249
+
+  E3_COOL_15: E: Cooldown 15 days after SL
+    2026-03: Trades= 19 Wins=  4 WR= 21.1% P&L=Rs     +345
+    2026-04: Trades= 17 Wins= 16 WR= 94.1% P&L=Rs  +19,487
+    2026-05: Trades= 13 Wins=  8 WR= 61.5% P&L=Rs   +8,417
+    TOTAL : Trades= 49 Wins= 28 WR= 57.1% P&L=Rs  +28,249
+
+==========================================================================================
+  GROUP ANALYSIS
+==========================================================================================
+
+  Option A (2PM Green):
+    A1_2PM_GREEN              Trades= 52 WR= 44.2% P&L=Rs  +20,673 (vs baseline: Rs-7,574)
+    A2_2PM_BEFORE_ENTRY       Trades= 50 WR= 48.0% P&L=Rs  +22,691 ← BEST IN GROUP (vs baseline: Rs-5,556)
+
+  Option C (Entry Volume):
+    C1_ENTRY_VOL_1x           Trades= 46 WR= 56.5% P&L=Rs  +24,691 ← BEST IN GROUP (vs baseline: Rs-3,556)
+    C2_ENTRY_VOL_2x           Trades= 31 WR= 51.6% P&L=Rs  +15,382 (vs baseline: Rs-12,865)
+    C3_ENTRY_VOL_3x           Trades= 23 WR= 34.8% P&L=Rs   +4,472 (vs baseline: Rs-23,775)
+    COMBO1                    Trades= 33 WR= 42.4% P&L=Rs  +16,784 (vs baseline: Rs-11,463)
+    COMBO2                    Trades= 25 WR= 48.0% P&L=Rs  +15,799 (vs baseline: Rs-12,448)
+    COMBO3                    Trades= 22 WR= 40.9% P&L=Rs   +9,293 (vs baseline: Rs-18,954)
+
+  Option D (RR Threshold):
+    D1_RR_5                   Trades= 49 WR= 57.1% P&L=Rs  +28,247 ← BEST IN GROUP (vs baseline: Rs+0)
+    D2_RR_7                   Trades= 38 WR= 44.7% P&L=Rs  +19,348 (vs baseline: Rs-8,899)
+    D3_RR_8                   Trades= 32 WR= 46.9% P&L=Rs  +19,265 (vs baseline: Rs-8,982)
+    D4_RR_10                  Trades= 25 WR= 48.0% P&L=Rs  +15,412 (vs baseline: Rs-12,835)
+    D5_RR_12                  Trades= 15 WR= 53.3% P&L=Rs  +10,274 (vs baseline: Rs-17,973)
+
+  Option E (Cooldown):
+    E1_COOL_5                 Trades= 49 WR= 57.1% P&L=Rs  +28,247 ← BEST IN GROUP (vs baseline: Rs+0)
+    E2_COOL_10                Trades= 49 WR= 57.1% P&L=Rs  +28,247 (vs baseline: Rs+0)
+    E3_COOL_15                Trades= 49 WR= 57.1% P&L=Rs  +28,247 (vs baseline: Rs+0)
+    E4_COOL_0                 Trades= 49 WR= 57.1% P&L=Rs  +28,247 (vs baseline: Rs+0)
+
+  Combinations:
+    COMBO1                    Trades= 33 WR= 42.4% P&L=Rs  +16,784 ← BEST IN GROUP (vs baseline: Rs-11,463)
+    COMBO2                    Trades= 25 WR= 48.0% P&L=Rs  +15,799 (vs baseline: Rs-12,448)
+    COMBO3                    Trades= 22 WR= 40.9% P&L=Rs   +9,293 (vs baseline: Rs-18,954)
+
+==========================================================================================
+  KEY TAKEAWAYS
+==========================================================================================
+
+  Baseline (Approach B)  : Rs+28,247 | 57.1% WR | 49 trades
+  Best P&L               : BASELINE → Rs+28,247 | 57.1% WR
+  Best Win Rate          : BASELINE → 57.1% WR | Rs+28,247
+
+  Total time: 2121s
+
+Done!

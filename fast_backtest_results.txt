@@ -1,0 +1,4 @@
+nohup: ignoring input
+Loading data...
+Loaded 797 symbols
+Valid symbols: 765
